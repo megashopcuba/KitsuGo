@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KitsuGo — Privacy Policy</title>
+    <style>
+        :root {
+            --bg: #0f0f1a;
+            --surface: #1a1a2e;
+            --card: #16213e;
+            --primary: #6c63ff;
+            --accent: #ff6584;
+            --text: #e8e8f0;
+            --text-secondary: #a0a0b8;
+            --border: #2a2a4a;
+            --success: #00e676;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            padding: 3rem 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        .header p {
+            color: rgba(255,255,255,0.85);
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+        }
+        .lang-toggle {
+            position: absolute;
+            top: 1.2rem;
+            right: 1.5rem;
+            display: flex;
+            gap: 0.4rem;
+        }
+        .lang-btn {
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: #fff;
+            padding: 0.4rem 0.9rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .lang-btn:hover { background: rgba(255,255,255,0.25); }
+        .lang-btn.active {
+            background: #fff;
+            color: var(--primary);
+            border-color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+        .lang-content { display: none; }
+        .lang-content.active { display: block; }
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        section {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.2rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+        }
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 1rem 0 0.5rem;
+        }
+        p { margin-bottom: 0.8rem; color: var(--text); }
+        ul { margin: 0.5rem 0 0.8rem 1.5rem; }
+        li { margin-bottom: 0.3rem; color: var(--text-secondary); }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.8rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem 0.8rem;
+            text-align: left;
+        }
+        th {
+            background: var(--surface);
+            color: var(--primary);
+            font-weight: 600;
+        }
+        td { color: var(--text-secondary); }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+        .summary-box {
+            background: linear-gradient(135deg, var(--surface), var(--card));
+            border: 1px solid var(--primary);
+            border-radius: 12px;
+            padding: 1.2rem 1.5rem;
+            margin-top: 1.5rem;
+            text-align: center;
+            font-weight: 500;
+        }
+        .summary-box p { margin: 0; color: var(--primary); }
+        .footer {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            padding: 2rem 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+        @media (max-width: 600px) {
+            .header h1 { font-size: 1.6rem; }
+            .lang-toggle { position: static; margin-top: 1rem; justify-content: center; }
+            .header { padding: 2rem 1rem; }
+            section { padding: 1rem; }
+            table { font-size: 0.8rem; }
+            th, td { padding: 0.4rem 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>KitsuGo</h1>
+    <p>Privacy Policy / Política de Privacidad</p>
+    <div class="lang-toggle">
+        <button class="lang-btn active" onclick="switchLang('en')">EN</button>
+        <button class="lang-btn" onclick="switchLang('es')">ES</button>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- English -->
+    <div id="content-en" class="lang-content active">
+        <p class="last-updated">Last updated: June 13, 2026</p>
+
+        <section>
+            <h2>1. Introduction</h2>
+            <p>KitsuGo is an anime discovery app that lets you explore popular titles, search for anime, view details, and save your favorites. This policy explains how we handle your information.</p>
+        </section>
+
+        <section>
+            <h2>2. Data we do NOT collect</h2>
+            <p>KitsuGo <strong>does not collect, store, or transmit</strong> any personal data to external servers. There are no user accounts, registration, login systems, or tracking mechanisms.</p>
+        </section>
+
+        <section>
+            <h2>3. Locally stored data</h2>
+            <p>All information generated by the app is stored <strong>exclusively on your device</strong> and never leaves it:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data type</th>
+                        <th>Storage</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Favorite anime</td>
+                        <td>Room Database (local SQLite)</td>
+                        <td>Remember your personal favorites list</td>
+                    </tr>
+                    <tr>
+                        <td>Search history</td>
+                        <td>Room Database (local SQLite)</td>
+                        <td>Show recent searches</td>
+                    </tr>
+                    <tr>
+                        <td>Dark theme preference</td>
+                        <td>DataStore</td>
+                        <td>Remember your visual preference</td>
+                    </tr>
+                    <tr>
+                        <td>Language preference</td>
+                        <td>DataStore</td>
+                        <td>Remember your selected language</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>You can delete this data at any time from system settings (Settings → Apps → KitsuGo → Storage → Clear data).</p>
+        </section>
+
+        <section>
+            <h2>4. Jikan API usage</h2>
+            <p>KitsuGo consumes the <strong>public Jikan API</strong> (<a href="https://jikan.moe" target="_blank">https://jikan.moe</a>), an unofficial MyAnimeList API. Queries are made from your device directly to Jikan's servers. KitsuGo merely displays the information Jikan returns.</p>
+            <ul>
+                <li><strong>We do not send</strong> any personal data to Jikan or MyAnimeList.</li>
+                <li>The Jikan API is publicly accessible and free.</li>
+                <li>Review <a href="https://jikan.moe/privacy" target="_blank">Jikan's Privacy Policy</a> for more details on their operations.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. App permissions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Permission</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>INTERNET</code></td>
+                        <td>Query the Jikan API to display anime data</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>No location, camera, microphone, contacts, external storage, or other permissions are requested.</p>
+        </section>
+
+        <section>
+            <h2>6. Firebase Analytics (optional)</h2>
+            <p>KitsuGo <strong>does not include Firebase Analytics or any other analytics service</strong> in its current configuration. If these are added in the future, this policy will be updated and you will be notified via an app update.</p>
+        </section>
+
+        <section>
+            <h2>7. Third-party services</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Purpose</th>
+                        <th>Privacy policy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jikan API</td>
+                        <td>Fetch anime data</td>
+                        <td><a href="https://jikan.moe/privacy" target="_blank">jikan.moe/privacy</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>KitsuGo does not include third-party SDKs (ads, analytics, social networks) that collect data.</p>
+        </section>
+
+        <section>
+            <h2>8. Security</h2>
+            <p>Since all data remains on your device, there are no risks related to personal data transmission. The app follows recommended Android security practices.</p>
+        </section>
+
+        <section>
+            <h2>9. Changes to this policy</h2>
+            <p>Any changes to this privacy policy will be reflected by updating this document and, when appropriate, through an in-app notification.</p>
+        </section>
+
+        <section>
+            <h2>10. Contact</h2>
+            <p>If you have questions about this privacy policy, you can open an issue in the project repository.</p>
+        </section>
+
+        <div class="summary-box">
+            <p><strong>Summary:</strong> KitsuGo does not collect your data. Everything stays on your device. No accounts, no ads, no tracking.</p>
+        </div>
+    </div>
+
+    <!-- Spanish -->
+    <div id="content-es" class="lang-content">
+        <p class="last-updated">Última actualización: 13 de junio de 2026</p>
+
+        <section>
+            <h2>1. Introducción</h2>
+            <p>KitsuGo es una aplicación de descubrimiento de anime que te permite explorar títulos populares, buscar animes, ver detalles y guardar tus favoritos. Esta política explica cómo manejamos tu información.</p>
+        </section>
+
+        <section>
+            <h2>2. Datos que NO recopilamos</h2>
+            <p>KitsuGo <strong>no recopila, almacena ni transmite</strong> ningún dato personal a servidores externos. No existen cuentas de usuario, registro, inicio de sesión, ni sistemas de tracking.</p>
+        </section>
+
+        <section>
+            <h2>3. Datos almacenados localmente</h2>
+            <p>Toda la información que genera la aplicación se almacena <strong>exclusivamente en tu dispositivo</strong> y nunca sale de él:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de dato</th>
+                        <th>Almacenamiento</th>
+                        <th>Propósito</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Animes favoritos</td>
+                        <td>Room Database (SQLite local)</td>
+                        <td>Recordar tu lista personal de favoritos</td>
+                    </tr>
+                    <tr>
+                        <td>Historial de búsqueda</td>
+                        <td>Room Database (SQLite local)</td>
+                        <td>Mostrar búsquedas recientes</td>
+                    </tr>
+                    <tr>
+                        <td>Preferencia de tema oscuro</td>
+                        <td>DataStore</td>
+                        <td>Recordar tu preferencia visual</td>
+                    </tr>
+                    <tr>
+                        <td>Preferencia de idioma</td>
+                        <td>DataStore</td>
+                        <td>Recordar tu idioma seleccionado</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Puedes borrar estos datos en cualquier momento desde los ajustes del sistema (Ajustes → Aplicaciones → KitsuGo → Almacenamiento → Borrar datos).</p>
+        </section>
+
+        <section>
+            <h2>4. Uso de la API de Jikan</h2>
+            <p>KitsuGo consume la <strong>API pública de Jikan</strong> (<a href="https://jikan.moe" target="_blank">https://jikan.moe</a>), una API no oficial de MyAnimeList. Las consultas se realizan desde tu dispositivo directamente a los servidores de Jikan. KitsuGo se limita a mostrar la información que Jikan devuelve.</p>
+            <ul>
+                <li><strong>No enviamos</strong> ningún dato personal tuyo a Jikan ni a MyAnimeList.</li>
+                <li>La API de Jikan es de acceso público y gratuito.</li>
+                <li>Revisa la <a href="https://jikan.moe/privacy" target="_blank">Política de Jikan</a> para más detalles sobre su funcionamiento.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Permisos de la aplicación</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Permiso</th>
+                        <th>Uso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>INTERNET</code></td>
+                        <td>Realizar consultas a la API de Jikan para mostrar animes</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>No se solicitan permisos de ubicación, cámara, micrófono, contactos, almacenamiento externo ni ningún otro.</p>
+        </section>
+
+        <section>
+            <h2>6. Firebase Analytics (opcional)</h2>
+            <p>KitsuGo <strong>no incluye Firebase Analytics ni ningún otro servicio de analytics</strong> en su configuración actual. Si en el futuro se añadieran, se actualizará esta política y se te notificará mediante una actualización de la aplicación.</p>
+        </section>
+
+        <section>
+            <h2>7. Servicios de terceros</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Servicio</th>
+                        <th>Propósito</th>
+                        <th>Política de privacidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jikan API</td>
+                        <td>Obtener datos de animes</td>
+                        <td><a href="https://jikan.moe/privacy" target="_blank">jikan.moe/privacy</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>KitsuGo no incorpora SDKs de terceros (anuncios, analytics, redes sociales) que recopilen datos.</p>
+        </section>
+
+        <section>
+            <h2>8. Seguridad</h2>
+            <p>Dado que todos los datos permanecen en tu dispositivo, no existen riesgos de transmisión de datos personales. La aplicación sigue las prácticas recomendadas de seguridad para Android.</p>
+        </section>
+
+        <section>
+            <h2>9. Cambios en esta política</h2>
+            <p>Cualquier cambio en esta política de privacidad se reflejará actualizando este documento y, cuando corresponda, mediante una notificación en la aplicación.</p>
+        </section>
+
+        <section>
+            <h2>10. Contacto</h2>
+            <p>Si tienes preguntas sobre esta política de privacidad, puedes abrir un issue en el repositorio del proyecto.</p>
+        </section>
+
+        <div class="summary-box">
+            <p><strong>Resumen:</strong> KitsuGo no recopila tus datos. Todo queda en tu dispositivo. No hay cuentas, ni anuncios, ni tracking.</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    KitsuGo &mdash; Built with the public Jikan API
+</div>
+
+<script>
+    function switchLang(lang) {
+        document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+        document.getElementById('content-' + lang).classList.add('active');
+        document.querySelector('.lang-btn[onclick*="' + lang + '"]').classList.add('active');
+        document.querySelector('html').lang = lang === 'en' ? 'en' : 'es';
+        history.replaceState(null, '', '?lang=' + lang);
+    }
+
+    (function() {
+        const params = new URLSearchParams(window.location.search);
+        const lang = params.get('lang') || 'en';
+        switchLang(lang);
+    })();
+</script>
+
+</body>
+</html>
